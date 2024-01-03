@@ -12,13 +12,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  /* background: linear-gradient(
-    208deg,
-    rgb(6, 6, 51),
-    rgb(40, 1, 1),
-    rgb(23, 11, 42)
-  ); */
-  background-color: #efb2ec;
+  background-color: #c096edbd;
 }
 
 .wrapper {
@@ -45,9 +39,9 @@ body {
 h1 {
   /* border: 1px solid red; */
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   padding: 12px 0px;
-  background-color: #f2afef;
+  background-color: #c096edbd;
 }
 
 .main-container:hover {
@@ -82,4 +76,57 @@ h1 {
 
 .footer p {
   font-size: 16px;
+}
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 767px) {
+  /* Global */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  .main-container {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 10px 1px rgb(71, 71, 71);
+    gap: 30px;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+
+  .main-container:hover {
+    box-shadow: 0px 0px 10px 1px rgb(0, 240, 0);
+  }
+
+  .container {
+    padding: 4px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .container > input {
+    padding: 8px 10px;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .container label {
+    font-weight: bold;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2px 0px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
 }
