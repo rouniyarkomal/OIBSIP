@@ -45,6 +45,11 @@ h3 {
   margin: 10px 0px;
 }
 
+.name {
+  color: rgb(255, 0, 0);
+  letter-spacing: 1.5px;
+}
+
 p {
   color: #555;
 }
@@ -70,6 +75,10 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+header img {
+  border-radius: 50%;
 }
 .menu {
   margin: 5px auto;
