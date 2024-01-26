@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: rgb(139, 215, 240);
+  --body-color: rgb(209, 240, 250);
+  --heading-color: rgb(40, 40, 40);
+  --secondary-color: rgba(255, 149, 0, 0.75);
+  --accent-color: rgb(0, 138, 80);
+  --text-color: black;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: var(--accent-color);
+  padding: 15px 0px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+h1 a:hover {
+  color: var(--secondary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.1s;
+  border: 1px solid transparent;
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  background-color: orange;
+}
+
+/* Sections */
+section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.featured-products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+section h2 {
+  font-size: 25px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 10px 0px;
+}
+
+.product-card {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 0.2s;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.product-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  transform: scale(1.04);
+}
+
+.product-image {
+  width: 100%;
+  height: 240px;
+  border-radius: 4px;
+}
+
+.product-details {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.product-title {
+  color: var(--heading-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+p {
+  letter-spacing: 0.7px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+}
